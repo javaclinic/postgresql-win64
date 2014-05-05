@@ -2,10 +2,21 @@
 
 Runnable PostgreSQL database for Win64 platform, including scripts to start database from any directory.
 
+## What do I do with this project?
+- This project will help you create a local PostgreSQL server that will work out of the box, with no installation files. As a developer, it is useful to have a local copy of a PostgreSQL server to play with.
+- Here's a short summary for impatient:
+  - Download project, place it in directory of your choice.
+  - Initialize database by running the initialization script.
+  - Start database by running the startup script.
+  - Now that database is running, start using it. Default port is `5432`, default username is `postgres`, default password is `password`.
+  - You can start `PSQL` command prompt by running the script.
+  - You can start `PGADMIN` program to administer your postgres database in visual environment (GUI).
 
 ## How to download this project?
-- Make sure you have `git` installed locally.
-- Use `git clone https://github.com/javaclinic/postgresql-win64.git` to clone the project.
+- You can download this project as a zip, e.g. https://github.com/javaclinic/postgresql-win64/archive/master.zip
+- You can download this project using `git` with HTTPS, e.g. `git clone https://github.com/javaclinic/postgresql-win64.git`
+- You can download this project using `git` with SSH, e.g. `git clone https://github.com/javaclinic/postgresql-win64.git`
+- You can download this project using `svn`, e.g. `svn checkout https://github.com/javaclinic/postgresql-win64`
 
 ## How to initialize database?
 - Run script `bin\initialize-database.cmd`, either from a command prompt window, or just double-click on the script file in windows explorer.
@@ -20,6 +31,12 @@ Runnable PostgreSQL database for Win64 platform, including scripts to start data
 ## How to stop database?
 - Run script `bin\stop-database-server.cmd`, either from a command prompt window, or just double-click on the script file in windows explorer.
 - Alternatively, you can press CTRL+C in the console window (RED).
+
+## How to start PSQL command prompt?
+- Run script `bin\start-psql-prompt.cmd`, either from a command prompt window, or just double-click on the script file in windows explorer.
+- To exit PSQL command prompt, type in `\q`.
+- To get additional HELP, type in `\?`
+- To get additional usage on various commands, type in `\help`
 
 
 ## Files and Directories
